@@ -9,10 +9,10 @@ import path from "path";
 dotenv.config();
 
 const server=express();
-const port=process.env.PORT || 8081;
+const port=process.env.PORT || 8083;
 const __dirname=path.resolve();
 
-server.use(cors({origin: "http://localhost:5173", credentials: true}));
+server.use(cors({origin: "http://localhost:5174", credentials: true}));
 
 server.use(express.json());
 server.use(cookieParser());
